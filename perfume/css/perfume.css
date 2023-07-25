@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+html      {scroll-behavior:smooth;}
+html,body {font-family: 'Gamja Flower', cursive; font-size:15pt;}
+a {text-decoration:none; color:black;}
+img {display:block; max-width:100%;}
+
+#layout {max-width:500px; margin:auto; position:relative;}
+
+header {background:#6a287e; color:white; text-align:center; display:flex; align-items:center; border:none; padding:12px 50px 10px 15px;}
+header button.material-icons {color:white; background:none; padding:7px; border:none; font-size:1.5rem;}
+header h1 {flex:1; }
+header rt {color:yellow;}
+
+nav {background:rgba(255,255,255, 0.9); height:70vh; padding:20px 0; box-shadow:0 3px 5px rgba(0,0,0, 0.4); position:absolute; width:100%; display:none;}
+nav a {display:block; padding:20px 40px; border-bottom:1px solid #999;}
+
+main {padding:20px 10px;}
+#f1+p {text-align:justify;}
+
+#f1+p>img {width:80px; float:left; margin-right:10px; transition:0.5s;}
+#f1+p>img:hover {transform:scale(1.2) rotate(-20deg);}
+
+figure     {overflow:hidden; position:relative;}
+#slide {display:flex; position:relative;}
+#circle {position:absolute; bottom:50px; left:45%;}
+#circle button {width:12px; height:12px; border-radius:50%; border:none; background: white;}
+#circle button.blue {background: blue;}
+
+figure img {border-radius:10px; box-shadow:2px 2px 5px rgba(0,0,0, 0.5);}
+
+figcaption {text-align:center; font-size:0.9rem; padding-top:10px; color:#555;}
+
+#f2 {background:pink; padding:10px;}
+#f2 h3::before {content:"\2614"; color:#6a287e; padding-right:8px;}
+#f2 p:not(:last-of-type) {padding-bottom:10px;}
+
+footer {background:#ddd; padding:8px; text-align:center;}
+
+#up {background:rgba(255,255,255, 0.9); position:fixed; right:10px; bottom:10px; padding:5px; border-radius:5px; box-shadow:0 0 5px black; font-weight:bold;}
+
+@media(min-width:501px){
+	#up {right:calc(((100% - 500px) / 2) + 10px);}
+}
